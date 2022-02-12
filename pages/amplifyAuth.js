@@ -5,12 +5,12 @@ import "../configureAmplify";
 import "@aws-amplify/ui-react/styles.css";
 
 function Profile() {
+    const [user, setUser] = useState(null);
     useEffect( () => {
         checkUser();
     }, [] )
 
     async function checkUser() {
-        const [user, setUser] = useState(null);
         try {
             const Auser = await Auth.currentAuthenticatedUser();
             Auser && setUser( Auser );
