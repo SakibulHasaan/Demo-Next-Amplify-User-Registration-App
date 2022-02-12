@@ -8,7 +8,7 @@ import ConfirmForgotPassword from '../components/ConfirmForgotPassword';
 import ConfirmSignUp from '../components/ConfirmSignUp';
 import Link from 'next/link'                        
 
-const profile = () => {
+const Profile = () => {
     const [ user, setUser ] = useState( null );
     const [info, setInfo] = useState(null);
     const [ formData, updateFormData ] = useState( {} );
@@ -138,4 +138,4 @@ const profile = () => {
     );
 };
 
-export default profile;
+export default Profile;

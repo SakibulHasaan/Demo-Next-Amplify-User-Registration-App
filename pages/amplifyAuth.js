@@ -6,6 +6,7 @@ import "@aws-amplify/ui-react/styles.css";
 
 function Profile() {
     const [user, setUser] = useState(null);
+    
     useEffect( () => {
         checkUser();
     }, [] )
